@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script type="module">
+      import { choosingStorage } from "./todo-app/choosingStorage.js";
+      const owner = "Мама";
+      const title = "Дела мамы";
+      const changer = "changer";
+
+      choosingStorage(changer, owner, title);
+    </script>
+  </head>
+  <body>
+    <div
+      class="container d-flex justify-content-between mb-5"
+      id="containerHeader"
+    >
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Мои дела</a>
+        <a href="dad.html" class="nav-link">Дела папы</a>
+        <a href="mom.html" class="nav-link">Дела мамы</a>
+      </nav>
+    </div>
+    <div class="container" id="todo-app"></div>
+  </body>
+</html>
